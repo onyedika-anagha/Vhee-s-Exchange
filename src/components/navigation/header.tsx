@@ -222,7 +222,7 @@ const Header = () => {
       {scrolled && (
         <Reveal
           type={AnimateType.FadeInUp}
-          className="fixed z-10  right-6 bottom-[124px] md:bottom-[180px] gizmo:md:bottom-[143px] lg:bottom-[80px]">
+          className="fixed z-[9999999999]  right-6 bottom-[124px] md:bottom-[180px] gizmo:md:bottom-[143px] lg:bottom-[80px]">
           <button
             onClick={goToTop}
             className={classNames(

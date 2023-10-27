@@ -46,7 +46,7 @@ function BlogDetails() {
             <HomeBlogItemLoader />
           </SwiperSlide>
         ))
-      : news.map((item, i) => (
+      : recentNews.map((item, i) => (
           <SwiperSlide key={i}>
             <HomeBlogItem
               item={item}
