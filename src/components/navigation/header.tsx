@@ -9,14 +9,23 @@ import { headerLinks } from "utils/helper/links";
 import { AnimateType, classNames } from "utils/helper/helper";
 import Reveal from "components/toolkit/reveal.component";
 import { goToTop } from "components/pagination/pagination.component";
+import Sidebar from "./sidebar.component";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState<boolean>(false),
+    [showSidebar, setShowSidebar] = useState<boolean>(false),
     theme = useSelector(selectTheme),
     dispatch = useDispatch(),
     switchTheme = () => {
       const mode = theme === "dark" ? "light" : "dark";
       dispatch(setTheme(mode));
+    },
+    toggleShowSidebar = (value?: boolean) => {
+      if (value != null) {
+        setShowSidebar(value);
+        return;
+      }
+      setShowSidebar((state) => !state);
     };
   useEffect(() => {
     // Define a function to check the scroll position and update the state.
@@ -154,23 +163,6 @@ const Header = () => {
             </div>
           </div>
           <div className="ml-auto flex lg:hidden">
-            <a
-              className="border-marshland-100 hover:bg-vhee-500 focus:bg-vhee-500 group dark:hover:bg-vhee-500 ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
-              aria-label="profile"
-              href="/profile/user_avatar">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width={24}
-                height={24}
-                className="fill-marshland-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white">
-                <path
-                  fill="none"
-                  d="M0 0h24v24H0z"
-                />
-                <path d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z" />
-              </svg>
-            </a>
             <button
               className="js-dark-mode-trigger dark:bg-vhee-500 group ml-2 flex h-10 w-10 items-center justify-center rounded-full border border-marshland-100 bg-white transition-colors hover:border-transparent hover:bg-vhee-500 focus:border-transparent focus:bg-vhee-500 dark:border-transparent dark:bg-white/[.15] dark:hover:bg-vhee-500"
               aria-label={theme}
@@ -202,7 +194,8 @@ const Header = () => {
             </button>
             <button
               className="js-mobile-toggle border-marshland-100 hover:bg-vhee-500 dark:hover:bg-vhee-500 focus:bg-vhee-500 group ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
-              aria-label="open mobile menu">
+              aria-label="open mobile menu"
+              onClick={() => toggleShowSidebar()}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -249,6 +242,7 @@ const Header = () => {
           </button>
         </Reveal>
       )}
+      {showSidebar && <Sidebar toggleShowSidebar={toggleShowSidebar} />}
     </>
   );
 };
