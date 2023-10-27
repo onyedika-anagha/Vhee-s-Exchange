@@ -1,8 +1,6 @@
 import HomeServices from "components/home/services.component";
 import _images_gradient from "assets/img/_images_gradient.jpg";
 import _images_gradient_dark from "assets/img/gradient_bg_image.jpg";
-import _pattern from "assets/img/pattern.png";
-import _image3 from "assets/img/3.jpg";
 import Reveal from "components/toolkit/reveal.component";
 import { AnimateType } from "utils/helper/helper";
 import CardRedeem from "components/home/card-redeem.component";
