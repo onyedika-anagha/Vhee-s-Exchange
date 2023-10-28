@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import _images_gradient from "assets/img/_images_gradient.jpg";
 import _images_gradient_dark from "assets/img/gradient_bg_image.jpg";
 import _images_gradient_bg from "assets/img/gradient_bg_dark.jpg";
@@ -70,11 +71,11 @@ const Home = () => {
                 <Reveal
                   type={AnimateType.FadeInLeft}
                   className="flex space-x-4">
-                  <a
+                  <Link
                     className="rounded-full bg-vhee-500 py-3 px-8 text-center font-semibold text-white shadow-vhee-500-volume transition-all hover:bg-vhee-700"
-                    href="/contact">
+                    to="/contact-us">
                     Contact Us
-                  </a>
+                  </Link>
                 </Reveal>
               </>
             </Reveal>

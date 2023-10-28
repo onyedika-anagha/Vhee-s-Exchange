@@ -10,6 +10,7 @@ import { AnimateType, classNames } from "utils/helper/helper";
 import Reveal from "components/toolkit/reveal.component";
 import { goToTop } from "components/pagination/pagination.component";
 import Sidebar from "./sidebar.component";
+import { THEME_KEY } from "utils/helper/states";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState<boolean>(false),
@@ -19,6 +20,7 @@ const Header = () => {
     switchTheme = () => {
       const mode = theme === "dark" ? "light" : "dark";
       dispatch(setTheme(mode));
+      localStorage.setItem(THEME_KEY, mode);
     },
     toggleShowSidebar = (value?: boolean) => {
       if (value != null) {
