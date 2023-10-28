@@ -21,4 +21,5 @@ export const devices = {
   siteInfo = {
     tel: "08165901502",
     email: "ewuchv@gmail.com",
-  };
+  },
+  socialInfo = [];
