@@ -11,6 +11,7 @@ import "swiper/css";
 import HomeBlogItem, {
   HomeBlogItemLoader,
 } from "components/home/blog-item.component";
+import { ITEMS_PER_PAGE } from ".";
 
 function BlogDetails() {
   const [news, setNews] = useState<BlogElement[]>([]),
@@ -20,7 +21,7 @@ function BlogDetails() {
     currentPage = page != null ? Number(page) : 1;
   console.log(currentPage);
   const getNews = async () => {
-      const uri = `https://www.cryptohopper.com/rest/api/v2/news/list?page=${currentPage}&limit=6`;
+      const uri = `https://www.cryptohopper.com/rest/api/v2/news/list?page=${currentPage}&limit=${ITEMS_PER_PAGE}`;
 
       try {
         const response = await fetch(uri);

@@ -24,7 +24,7 @@ const HomeBlogItem = ({ item, page = 1 }: PropType) => {
       <>
         <div className="mb-4 flex flex-wrap gap-4 text-2xs dark:text-marshland-300">
           <div className="flex flex-wrap items-center space-x-2">
-            <span className="text-accent">
+            <span className="text-vhee-500">
               <span className="uppercase">{createdByAlias}</span>
             </span>
           </div>
@@ -32,7 +32,7 @@ const HomeBlogItem = ({ item, page = 1 }: PropType) => {
             <time>{new Date(created).toLocaleDateString()}</time>
           </span>
         </div>
-        <h2 className="mb-5 font-display text-xl text-marshland-700 hover:text-accent dark:text-white dark:hover:text-accent">
+        <h2 className="mb-5 font-display text-xl text-marshland-700 hover:text-vhee-500 dark:text-white dark:hover:text-vhee-500">
           <Link to={`/news/${page}/${alias}`}>{title}</Link>
         </h2>
         <p className="mb-8 text text-marshland-700 dark:text-marshland-300 truncate ...">
@@ -72,7 +72,7 @@ export const HomeBlogItemLoader = () => {
           <div className="h-3 bg-gray-200 rounded-full dark:bg-stone-500 dark:bg-opacity-25 w-12 mb-4"></div>
         </span>
       </div>
-      <h2 className="mb-5 font-display text-xl text-marshland-700 hover:text-accent dark:text-white dark:hover:text-accent">
+      <h2 className="mb-5 font-display text-xl text-marshland-700 hover:text-vhee-500 dark:text-white dark:hover:text-vhee-500">
         <div className="h-3 bg-gray-200 rounded-full dark:bg-stone-500 dark:bg-opacity-25 w-100 mb-4"></div>
       </h2>
       <p className="mb-8 text text-marshland-700 dark:text-marshland-300">
