@@ -65,7 +65,7 @@ function Contact() {
                         <a
                           href={`tel:${siteInfo.tel}`}
                           className="hover:text-accent dark:text-marshland-300 text-sm">
-                          {siteInfo.email}
+                          {siteInfo.tel}
                         </a>
                       </div>
                     </div>
@@ -114,7 +114,7 @@ function Contact() {
                         </span>
                         <a
                           href={`mailto:${siteInfo.email}`}
-                          className="hover:text-vhee-500 dark:text-marshland-300 text-sm not-italic">
+                          className="hover:text-vhee-500 dark:text-marshland-300 text-sm not-italic lowercase">
                           {siteInfo.email}
                         </a>
                       </div>
