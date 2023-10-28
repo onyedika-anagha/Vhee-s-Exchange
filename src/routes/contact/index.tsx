@@ -89,7 +89,7 @@ function Contact() {
                           Address
                         </span>
                         <address className="dark:text-marshland-300 text-sm not-italic">
-                          08 W 36th St, New YorkNY 10001
+                          Nigeria.
                         </address>
                       </div>
                     </div>
