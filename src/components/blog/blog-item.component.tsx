@@ -50,11 +50,11 @@ const BlogItem = ({ item, page = 1 }: PropType) => {
         </figure>
         <div className="dark:border-marshland-600 dark:bg-marshland-700 border-marshland-100 rounded-b-[1.25rem] border border-t-0 bg-white p-[10%]">
           <div className="mb-3 flex flex-wrap items-center space-x-1 text-xs">
-            <span className="dark:text-marshland-200 text-marshland-700 font-display hover:text-accent">
+            <span className="dark:text-marshland-200 text-marshland-700 font-display hover:text-marshland-500">
               {createdByAlias}
             </span>
           </div>
-          <h2 className="font-display text-marshland-700 dark:hover:text-accent hover:text-accent mb-4 text-xl dark:text-white">
+          <h2 className="font-display text-marshland-700 dark:hover:text-marshland-500 hover:text-marshland-500 mb-4 text-xl dark:text-white">
             <Link to={`/news/${page}/${alias}`}>{title}</Link>
           </h2>
           <p className="dark:text-marshland-200 mb-8 truncate ...">
