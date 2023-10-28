@@ -22,4 +22,5 @@ export const devices = {
     tel: "08165901502",
     email: "ewuchv@gmail.com",
   },
-  socialInfo = [];
+  socialInfo = [],
+  THEME_KEY = "_vhee-theme";

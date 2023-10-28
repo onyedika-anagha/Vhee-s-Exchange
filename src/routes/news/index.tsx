@@ -6,7 +6,7 @@ import Preloader from "components/toolkit/preloader.component";
 import Pagination from "components/pagination/pagination.component";
 import BlogItem from "components/blog/blog-item.component";
 
-const ITEMS_PER_PAGE = 12;
+export const ITEMS_PER_PAGE = 12;
 function News() {
   const [blog, setBlog] = useState<BlogElement[] | null>(null),
     [searchParams, setSearchParams] = useSearchParams(),

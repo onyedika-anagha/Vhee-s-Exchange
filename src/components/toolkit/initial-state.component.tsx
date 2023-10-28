@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setTheme } from "store/theme/theme.action";
 import { selectTheme } from "store/theme/theme.selector";
+import { THEME_KEY } from "utils/helper/states";
 
 const InitialState = () => {
   const dispatch = useDispatch();
@@ -9,14 +10,12 @@ const InitialState = () => {
   // siteInfo = useSelector(selectInfo)
 
   useEffect(() => {
+    const localTheme = localStorage.getItem(THEME_KEY);
     if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
+      localTheme == null &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
       dispatch(setTheme("dark"));
-    } else {
-      dispatch(setTheme("light"));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
