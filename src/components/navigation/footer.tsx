@@ -189,7 +189,7 @@ const Footer = () => {
             <span>
               © {/* */}
               {new Date().getFullYear()}
-              {/* */} Vhee's Exchange — Made by
+              {/* */} Vhee's Xchange — Made by
             </span>
             <a
               target="_blank"

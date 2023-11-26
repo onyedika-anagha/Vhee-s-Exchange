@@ -63,7 +63,7 @@ const Home = () => {
                   Hello,
                 </p>
                 <h1 className="mb-6 text-center font-display text-5xl text-marshland-700 dark:text-white lg:text-left lg:text-6xl">
-                  Welcome to Vhee's Exchange
+                  Welcome to Vhee's Xchange
                 </h1>
                 <p className="mb-8 max-w-md text-center text-lg dark:text-marshland-200 lg:text-left">
                   Your Trusted Partner for Cryptocurrency and Money Exchange
@@ -192,7 +192,7 @@ const Home = () => {
                     Would you like some help getting started?
                   </h2>
                   <p className="mb-8 text-lg dark:text-marshland-300">
-                    Give us a call noew
+                    Give us a call now
                   </p>
                   <a
                     className="inline-block rounded-full bg-[#94488e] py-3 px-8 text-center font-semibold text-white shadow-[#94488e] transition-all hover:bg-[#803b7a]"

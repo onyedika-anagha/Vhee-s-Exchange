@@ -29,7 +29,7 @@ function CardRedeem() {
               height={143}
               decoding="async"
               data-nimg={1}
-              className="absolute -top-14 right-0 bg-stone-500 animate-fly dark:opacity-10 md:-right-12"
+              className="absolute -top-14 right-0 animate-fly dark:opacity-10 md:-right-12"
               src={_pattern}
               style={{ color: "transparent" }}
             />

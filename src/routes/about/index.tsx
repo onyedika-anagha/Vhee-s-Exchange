@@ -26,13 +26,13 @@ function About() {
           className="container">
           <div className="mx-auto max-w-2xl py-16 text-center">
             <h1 className="font-display text-marshland-700 mb-8 text-4xl font-medium dark:text-white">
-              About Vhee's Exchange
+              About Vhee's Xchange
             </h1>
             <p className="dark:text-marshland-300 text-lg leading-normal">
-              Vhee's Exchange offers a broad spectrum of digital assets, from
+              Vhee's Xchange offers a broad spectrum of digital assets, from
               established giants like Bitcoin and Ethereum to promising
               altcoins. Diversify your portfolio and stay ahead in the world of
-              cryptocurrencies. Join Vhee's Exchange today and experience a new
+              cryptocurrencies. Join Vhee's Xchange today and experience a new
               level of financial flexibility, security, and convenience. Whether
               you want to breathe new life into unused gift cards or delve into
               the exciting world of digital assets, we're here to make it
